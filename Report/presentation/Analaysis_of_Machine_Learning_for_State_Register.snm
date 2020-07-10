@@ -1,0 +1,17 @@
+\beamer@slide {tab:Original Features}{8}
+\beamer@slide {eqn:euclidean distance nth dimension}{10}
+\beamer@slide {eqn:model accuracy equation}{14}
+\beamer@slide {eqn:state register prediction accuracy equation}{14}
+\beamer@slide {tab:Accuracy No Feature Selection}{15}
+\beamer@slide {eqn:ratio model accuracy}{17}
+\beamer@slide {ration state register accuracy}{17}
+\beamer@slide {tab: Ratio Interpretation}{17}
+\beamer@slide {fig:Model Accuracy Ratio ($R_n$) Per Feature}{18}
+\beamer@slide {fig:State Register Ratio ($SRR_n$) Per Feature}{19}
+\beamer@slide {tab: conditions for filtering}{20}
+\beamer@slide {fig:Feature Occurrence Percentage: FP Model}{21}
+\beamer@slide {fig:Feature Occurrence Percentage: FP State Register}{22}
+\beamer@slide {fig:Feature Occurrence Percentage: SFS}{24}
+\beamer@slide {tab:Accuracy after feature selection}{26}
+\beamer@slide {tab:Optimized Model Accuracy}{28}
+\beamer@slide {tab:Modified Optimized Model Accuracy}{29}

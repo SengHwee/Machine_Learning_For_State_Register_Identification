@@ -1,0 +1,9 @@
+0
+clustering
+degree
+degree_centrality
+has_feedback_path
+katz
+load_centrality
+outdegree
+euclidean_score

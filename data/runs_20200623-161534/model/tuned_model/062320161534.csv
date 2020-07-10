@@ -1,0 +1,9 @@
+round_epochs,loss,accuracy,val_loss,val_accuracy,activation,batch_size,dropout,epochs,first_neuron,hidden_layers,hidden_neurons,last_activation,loss,optimizer
+10,0.4718398512131048,0.840484,0.1644247360375463,0.9959184,elu,32,0.5,10,20,15,7,sigmoid,sparse_categorical_crossentropy,adam
+10,0.20194256583554518,0.8888889,0.30436002843234006,0.9959184,elu,32,0.0,10,50,35,77,sigmoid,sparse_categorical_crossentropy,RMSprop
+5,0.06368972272465592,0.9779978,0.4985366503864694,0.6204082,relu,10,0.0,5,35,5,147,sigmoid,sparse_categorical_crossentropy,RMSprop
+5,0.447438035926672,0.88668865,0.610724434560659,0.14285715,elu,32,0.5,5,20,15,287,sigmoid,sparse_categorical_crossentropy,RMSprop
+24,0.306152933723299,0.9724972,1.2096566229450458,0.22040816,relu,10,0.25,24,65,35,357,sigmoid,binary_crossentropy,RMSprop
+24,0.3610253031596099,0.8888889,0.16552450218979192,0.9959184,elu,10,0.0,24,20,35,217,sigmoid,binary_crossentropy,adam
+5,0.09014643142325855,0.97029704,0.5141573561919841,0.60408163,relu,10,0.0,5,20,15,147,sigmoid,binary_crossentropy,adam
+24,0.223971044958221,0.8888889,0.23093868700824743,0.9959184,relu,10,0.25,24,65,15,7,sigmoid,sparse_categorical_crossentropy,adam

@@ -1,0 +1,35 @@
+% Copyright 2016 by Florian Wilde
+%
+% This file may be distributed and/or modified
+%
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU Public License.
+%
+% See the file doc/licenses/LICENSE for more details.
+
+\mode<presentation>
+
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\newlength{\titleboxwidth}
+\setlength{\titleboxwidth}{\paperwidth}
+\addtolength{\titleboxwidth}{-1cm}
+
+\defbeamertemplate*{title page}{TUMCD2015}[1][]
+{
+  \frametitle{\inserttitle}
+  \begin{block}{}
+    \usebeamercolor[fg]{author}\usebeamerfont{author}\insertauthor\par
+    \usebeamercolor[fg]{institute}\usebeamerfont{institute}\insertinstitute\par
+    \usebeamercolor[fg]{date}\usebeamerfont{date}\insertdate\par
+  \end{block}
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[above left=-1mm and \frameLRborder] at (current page.south east) {\includegraphics[height=7.2cm]{TUM_Uhrenturm.png}};
+  \end{tikzpicture}
+}
+
+\setbeamertemplate{itemize item}[circle]
+\setbeamertemplate{itemize subitem}[triangle]
+
+\mode
+<all>

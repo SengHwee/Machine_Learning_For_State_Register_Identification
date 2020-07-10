@@ -1,0 +1,11 @@
+0
+betweenness_centrality
+closeness_centrality
+clustering
+degree
+degree_centrality
+has_feedback_path
+katz
+load_centrality
+outdegree
+pagerank

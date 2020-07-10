@@ -1,0 +1,32 @@
+b04_reset.v: 65,66
+b06_reset.v: 6,7,8
+b09_reset.v: 19,20
+b10_reset.v: 10,11,8,9
+b14_reset.v: 245
+FSM.v: 1,2,3,4,5,6,7
+MEMORY_INTERFACE.v: 1,2,3,4,5,6,7
+cpu8080: 1,2,3,4,5,6
+axi_spi_master:   DFFPOSX1 DFFPOSX1_230 ( .CLK(CLK), .D(_abc_2913_n116), .Q(state_0_) );
+  DFFPOSX1 DFFPOSX1_231 ( .CLK(CLK), .D(_abc_2913_n87), .Q(state_1_) );
+  DFFPOSX1 DFFPOSX1_232 ( .CLK(CLK), .D(_abc_2913_n1036), .Q(axi_bready) );
+  DFFPOSX1 DFFPOSX1_233 ( .CLK(CLK), .D(_abc_2913_n78), .Q(state_3_) );
+  DFFPOSX1 DFFPOSX1_234 ( .CLK(CLK), .D(_abc_2913_n129), .Q(state_4_) );
+  DFFPOSX1 DFFPOSX1_235 ( .CLK(CLK), .D(_abc_2913_n105), .Q(state_5_) );
+  DFFPOSX1 DFFPOSX1_236 ( .CLK(CLK), .D(_abc_2913_n95), .Q(state_6_) );
+  DFFPOSX1 DFFPOSX1_237 ( .CLK(CLK), .D(_abc_2913_n70), .Q(state_7_) );
+  DFFPOSX1 DFFPOSX1_238 ( .CLK(CLK), .D(_abc_2913_n1025), .Q(axi_rready) );
+completegpio: DFFPOSX1 DFFPOSX1_41 ( .CLK(clock), .D(maquina__abc_1145_n9), .Q(maquina_state_0_) );
+  DFFPOSX1 DFFPOSX1_42 ( .CLK(clock), .D(maquina__abc_1145_n113), .Q(maquina_state_1_) );
+  DFFPOSX1 DFFPOSX1_43 ( .CLK(clock), .D(maquina__abc_1145_n14), .Q(maquina_state_2_) );
+  DFFPOSX1 DFFPOSX1_44 ( .CLK(clock), .D(maquina__abc_1145_n108), .Q(maquina_state_3_) );
+  DFFPOSX1 DFFPOSX1_45 ( .CLK(clock), .D(maquina__abc_1145_n107), .Q(maquina_state_4_) );
+  DFFPOSX1 DFFPOSX1_46 ( .CLK(clock), .D(maquina__abc_1145_n109), .Q(maquina_state_5_) );
+  DFFPOSX1 DFFPOSX1_47 ( .CLK(clock), .D(maquina__abc_1145_n110), .Q(maquina_state_6_) );
+  DFFPOSX1 DFFPOSX1_48 ( .CLK(clock), .D(maquina__abc_1145_n111), .Q(maquina_state_7_) );
+  DFFPOSX1 DFFPOSX1_49 ( .CLK(clock), .D(maquina__abc_1145_n112), .Q(maquina_state_8_) );
+  DFFPOSX1 DFFPOSX1_50 ( .CLK(clock), .D(maquina__abc_1145_n35), .Q(maquina_state_9_) );
+  DFFPOSX1 DFFPOSX1_51 ( .CLK(clock), .D(maquina__abc_1145_n45), .Q(maquina_state_10_) );
+b01_reset: 3,4,5
+b02_reset: 2,3,4
+b08_reset: 5,6 (ohne counter) bzw. 5,6,7,8,9 (mit counter)
+uart: 21,22,23,43,44,10,11,12,13,14,15,16,17,18,19,20,1,2,3,4,5,6,7,8,9,63,64,30,31,32,33,51,52,53,54,24,25,26,27,28,29,45,46,47,48,49,50 (mit counter)

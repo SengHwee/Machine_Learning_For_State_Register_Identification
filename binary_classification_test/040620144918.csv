@@ -1,0 +1,2 @@
+round_epochs,loss,acc,val_loss,val_acc,activation,batch_size,dropout,epochs,first_neuron,hidden_layers,hidden_neurons,last_activation,optimizer
+10,0.09578347887407553,0.96997,1.6786418184638023,0.28125,relu,12,0.0,10,10,0,10,sigmoid,adam

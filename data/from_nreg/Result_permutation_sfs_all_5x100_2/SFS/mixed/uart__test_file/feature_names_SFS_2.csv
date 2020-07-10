@@ -1,0 +1,12 @@
+0
+average_neighbour_degree
+betweenness_centrality
+closeness_centrality
+clustering
+degree
+degree_centrality
+has_feedback_path
+outdegree
+pagerank
+euclidean_score
+fastRELIC_score

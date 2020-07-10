@@ -1,0 +1,4 @@
+round_epochs,loss,accuracy,val_loss,val_accuracy,activation,batch_size,dropout,epochs,first_neuron,hidden_layers,hidden_neurons,last_activation,loss,optimizer
+12,0.07547094926188881,0.980198,0.6192759869050006,0.7020408,elu,32,0.0,12,25,15,7,sigmoid,binary_crossentropy,RMSprop
+24,0.36231886750400655,0.8888889,0.1250548076872923,0.9959184,elu,20,0.25,24,65,85,7,sigmoid,sparse_categorical_crossentropy,RMSprop
+5,0.43301590168961335,0.8888889,0.07806379089550096,0.9959184,elu,20,0.25,5,75,85,217,sigmoid,sparse_categorical_crossentropy,RMSprop

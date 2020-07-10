@@ -1,0 +1,13 @@
+,0
+average_neighbour_degree,0.7692307692307693
+betweenness_centrality,0.3076923076923077
+closeness_centrality,0.4307692307692308
+clustering,0.46153846153846156
+degree,0.4
+degree_centrality,0.3230769230769231
+has_feedback_path,0.2
+katz,0.6461538461538462
+load_centrality,0.16923076923076924
+outdegree,0.3076923076923077
+pagerank,0.27692307692307694
+similarity__score,0.9384615384615385

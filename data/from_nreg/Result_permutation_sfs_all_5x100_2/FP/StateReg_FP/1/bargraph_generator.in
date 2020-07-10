@@ -1,0 +1,10 @@
+set terminal epslatex color size 17cm,12cm
+set output "statereg_counter.tex"
+set style data histograms
+set style fill pattern border -1 # solid 
+set yrange[0:1]
+set xtic rotate by 30 right
+set grid
+
+
+plot 'statereg_counter.dat' using 2:xtic(1) title 'Original' fs pattern 0, 'statereg_counter.dat' using 3:xtic(1) title 'With fastRELIC' fs pattern 1 , 'statereg_counter.dat' using 4:xtic(1) title 'With Euclidean' fs pattern 2 , 'statereg_counter.dat' using 5:xtic(1) title 'With Euclidean and fastRELIC' fs pattern 4

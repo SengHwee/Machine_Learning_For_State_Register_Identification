@@ -1,0 +1,89 @@
+% Copyright 2016 by Florian Wilde
+%
+% This file may be distributed and/or modified
+%
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU Public License.
+%
+% See the file doc/licenses/LICENSE for more details.
+
+\mode<presentation>
+
+% Headline and footline
+
+\newlength{\frameLRborder}
+\setlength{\frameLRborder}{5mm}
+\newlength{\frameBborder}
+\setlength{\frameBborder}{5mm}
+\newlength{\frameHeadlineHeight}
+\setlength{\frameHeadlineHeight}{10mm}
+\newlength{\frameFootlineHeight}
+\setlength{\frameFootlineHeight}{4mm}
+
+%\logo{\includegraphics[height=5.1mm]{TUMLogo_oZ_Vollfl_blau_RGB}} inserts the logo on every slide for some reason
+
+\beamertemplatenavigationsymbolsempty
+\defbeamertemplate*{headline}{TUMCD2015 theme}
+{
+  \hbox{
+    \begin{beamercolorbox}[wd=.993\paperwidth,ht=.3\frameHeadlineHeight,dp=1ex,right]{navigation symbols}%
+      \insertframenavigationsymbol%
+      \insertsubsectionnavigationsymbol%
+      \insertsectionnavigationsymbol%
+    \end{beamercolorbox}
+  }
+  \hbox{
+    \begin{beamercolorbox}[wd=.494\textwidth,ht=.7\frameHeadlineHeight,dp=1ex,left]{logo in head/foot}%
+      \hspace*{.9\frameLRborder}
+      \includegraphics[trim=2.6mm 2.6mm 3.2mm 2.6mm,clip=true,height=4.75mm]{LS_Sicherheit_Informationstechnik_OS_Blau_RGB}
+      \vspace*{.2\frameHeadlineHeight}
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[wd=.494\textwidth,ht=.7\frameHeadlineHeight,dp=1ex,right]{logo in head/foot}%
+      \includegraphics[height=4.4mm]{TUMLogo_oZ_Vollfl_blau_RGB}
+      \hspace*{.9\frameLRborder}
+      \vspace*{.2\frameHeadlineHeight}
+    \end{beamercolorbox}
+  }
+}
+
+\defbeamertemplate*{footline}{TUMCD2015 theme}
+{
+  \hbox{%
+  \ifcase\insertframenumber{}
+  \or \else
+    \begin{beamercolorbox}[wd=.8\paperwidth,ht=\frameFootlineHeight,dp=1ex,left]{author in head/foot}%
+      \hspace*{\frameLRborder}\usebeamerfont{author in head/foot}\insertshortauthor~~\beamer@ifempty{\insertshortinstitute}{}{(\insertshortinstitute)}
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.2\paperwidth,ht=\frameFootlineHeight,dp=1ex,right]{frame in head/foot}%
+      \usebeamerfont{date in head/foot}\insertframenumber{} / \inserttotalframenumber\hspace*{\frameLRborder}
+    \end{beamercolorbox}%
+  \fi
+  }\vspace*{\frameBborder}
+}
+
+\setbeamersize{
+    text margin left=\frameLRborder,
+    text margin right=\frameLRborder
+}
+
+\defbeamertemplate*{frametitle}{TUMCD2015 theme}[1][left]
+{
+  %adapted from default theme
+  \ifbeamercolorempty[bg]{frametitle}{}{\nointerlineskip}%
+  \begin{beamercolorbox}[sep=0cm,#1,wd=\textwidth]{frametitle}
+    \usebeamerfont{frametitle}%
+    \if@tempswa\else\csname beamer@fte#1\endcsname\fi%
+    \strut\insertframetitle\strut\par%
+    {%
+      \ifx\insertframesubtitle\@empty%
+      \else%
+      {\vskip0.5ex\usebeamerfont{framesubtitle}\usebeamercolor[fg]{framesubtitle}\insertframesubtitle\strut\par}%
+      \fi
+    }%
+    \if@tempswa\else\vskip-.5cm\fi% set inside beamercolorbox... evil here...
+  \end{beamercolorbox}%
+  \vspace*{1ex}%
+}
+
+\mode
+<all>
